@@ -743,6 +743,21 @@ button {
   min-width: 0;
 }
 
+.proj__media {
+  min-width: 0;
+}
+
+.proj__video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  border: 1px solid var(--hair);
+  border-radius: var(--rad);
+  background: #000;
+}
+
 /* Maquette d'interface */
 .screen {
   display: grid;
