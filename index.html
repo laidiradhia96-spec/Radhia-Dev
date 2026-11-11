@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#080F20">
+  <meta name="theme-color" content="#F5F1E9">
 
   <title>Radhia Laidi — Portfolio | IT Support, SAP, ERP</title>
   <meta name="description" content="Portfolio de Radhia Laidi : support IT, SAP, ERP et développement d'applications de gestion.">
@@ -12,20 +12,23 @@
 
   <!-- À COMPLÉTER après publication GitHub Pages (ne jamais inventer de domaine) :
        <link rel="canonical" href="https://<utilisateur>.github.io/<depot>/">
-       <meta property="og:url" content="https://<utilisateur>.github.io/<depot>/">
-       <meta property="og:image" content="assets/og-image.png"> -->
+       <meta property="og:url" content="https://<utilisateur>.github.io/<depot>/"> -->
 
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:site_name" content="Radhia Laidi — Portfolio">
   <meta property="og:title" content="Radhia Laidi — Portfolio | IT Support, SAP, ERP">
   <meta property="og:description" content="Support IT, SAP, ERP et développement d'applications de gestion.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Carte de partage du portfolio de Radhia Laidi — ingénieure en informatique, IT Support Engineer">
 
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:ital,wght@0,400;0,500;1,400&display=swap">
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -44,13 +47,12 @@
 <body>
   <a class="skip" href="#accueil">Aller au contenu principal</a>
 
-  <!-- ============ NAVIGATION ============ -->
+  <!-- ============ HEADER ============ -->
   <header class="topbar" id="topbar">
     <div class="wrap topbar__in">
       <a class="sigil" href="#accueil" aria-label="Radhia Laidi — accueil">
-        <span class="sigil__dot" aria-hidden="true"></span>
         <span class="sigil__name">Radhia&nbsp;Laidi</span>
-        <span class="sigil__role" aria-hidden="true">IT&nbsp;SUPPORT</span>
+        <span class="sigil__role" aria-hidden="true">IT&nbsp;Support&nbsp;Engineer</span>
       </a>
 
       <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
@@ -62,299 +64,68 @@
           <li><a class="menu__link" href="#accueil">Accueil</a></li>
           <li><a class="menu__link" href="#expertise">Expertise</a></li>
           <li><a class="menu__link" href="#projets">Projets</a></li>
-          <li><a class="menu__link" href="#a-propos">À propos</a></li>
-          <li><a class="menu__link menu__link--on" href="#contact">Contact</a></li>
+          <li><a class="menu__link" href="#experience">Expérience</a></li>
+          <li><a class="menu__link" href="#competences">Compétences</a></li>
+          <li><a class="menu__link" href="#contact">Contact</a></li>
         </ul>
       </nav>
+
+      <a class="navcta" href="#contact">Me contacter</a>
     </div>
   </header>
 
   <main>
     <!-- ============ HERO ============ -->
     <section class="hero" id="accueil" aria-labelledby="h1">
-      <div class="wrap hero__grid">
-        <div class="hero__copy">
-          <p class="kicker"><span class="kicker__bar" aria-hidden="true"></span>Ingénieure informatique</p>
+      <span class="hero__side" aria-hidden="true">Portfolio — Édition 2026</span>
 
-          <h1 class="hero__title" id="h1">
-            <span class="hero__line"><span class="hero__word">Des systèmes fiables.</span></span>
-            <span class="hero__line"><span class="hero__word hero__word--on">Des solutions utiles.</span></span>
-          </h1>
+      <div class="wrap">
+        <p class="hero__kicker rv">Ingénieure en informatique · IT Support Engineer</p>
 
-          <p class="hero__sum">J'accompagne les entreprises dans l'exploitation de leurs systèmes informatiques, le déploiement de solutions de gestion et la digitalisation de leurs activités. Je conçois également des applications web adaptées aux besoins métiers, avec une attention particulière portée à la fiabilité, à l'expérience utilisateur et à l'efficacité opérationnelle.</p>
+        <h1 class="hero__title rv" id="h1">
+          La technologie,
+          <em>avec justesse.</em>
+        </h1>
 
-          <div class="hero__cta">
-            <a class="btn btn--solid" href="#projets">
-              Explorer mes projets
-              <svg class="btn__ico" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h10M8 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-            <a class="btn btn--line" href="#contact">
-              Me contacter
-              <svg class="btn__ico" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><rect x="1.7" y="3.3" width="12.6" height="9.4" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2.3 4.4 8 8.8l5.7-4.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
+        <hr class="hero__rule rv" aria-hidden="true">
 
-          <ul class="rail" aria-label="Domaines">
+        <div class="hero__foot">
+          <p class="hero__sum rv">J'accompagne les entreprises dans l'exploitation de leurs systèmes informatiques, le déploiement de solutions de gestion et la digitalisation de leurs activités. Je conçois également des applications web adaptées aux besoins métiers, avec une attention particulière portée à la fiabilité, à l'expérience utilisateur et à l'efficacité opérationnelle.</p>
+
+          <ul class="rail rv" aria-label="Domaines">
             <li>Support IT</li>
             <li>Systèmes d'information</li>
             <li>SAP &amp; ERP</li>
             <li>Développement web</li>
           </ul>
         </div>
-
-        <div class="stage" aria-hidden="true">
-          <div class="stage__box">
-            <span class="stage__tick stage__tick--tl"></span>
-            <span class="stage__tick stage__tick--tr"></span>
-            <span class="stage__tick stage__tick--bl"></span>
-            <span class="stage__tick stage__tick--br"></span>
-
-            <svg class="arch" viewBox="0 0 520 520" focusable="false">
-              <defs>
-                <linearGradient id="ln" x1="0" y1="0" x2="1" y2="1">
-                  <stop offset="0" stop-color="#1677FF"/>
-                  <stop offset="1" stop-color="#20D9FF"/>
-                </linearGradient>
-                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                  <path d="M40 0H0V40" fill="none" stroke="#20D9FF" stroke-opacity=".12" stroke-width="1"/>
-                </pattern>
-              </defs>
-
-              <rect x="0" y="0" width="520" height="520" fill="url(#grid)" opacity=".55"/>
-              <rect class="arch__bound" x="16" y="16" width="488" height="488" fill="none" stroke="#1677FF" stroke-opacity=".35" stroke-width="1" stroke-dasharray="6 8"/>
-
-              <g fill="none" stroke="url(#ln)" stroke-width="1.4" class="arch__wire">
-                <path d="M100 120 V240 H175"/>
-                <path d="M100 400 V280 H175"/>
-                <path d="M420 120 V240 H345"/>
-                <path d="M420 400 V280 H345"/>
-                <path d="M175 260 H345" stroke-opacity=".45" stroke-dasharray="4 6"/>
-              </g>
-
-              <g class="arch__node">
-                <rect x="40" y="60" width="120" height="60" fill="#0c1730" stroke="#1677FF" stroke-opacity=".5"/>
-                <text x="100" y="95" text-anchor="middle" class="arch__t">WEB</text>
-              </g>
-              <g class="arch__node">
-                <rect x="360" y="60" width="120" height="60" fill="#0c1730" stroke="#1677FF" stroke-opacity=".5"/>
-                <text x="420" y="95" text-anchor="middle" class="arch__t">SAP</text>
-              </g>
-              <g class="arch__node">
-                <rect x="40" y="400" width="120" height="60" fill="#0c1730" stroke="#1677FF" stroke-opacity=".5"/>
-                <text x="100" y="435" text-anchor="middle" class="arch__t">DB</text>
-              </g>
-              <g class="arch__node">
-                <rect x="360" y="400" width="120" height="60" fill="#0c1730" stroke="#1677FF" stroke-opacity=".5"/>
-                <text x="420" y="435" text-anchor="middle" class="arch__t">IT</text>
-              </g>
-
-              <g class="arch__core">
-                <rect x="175" y="215" width="170" height="90" fill="#101d36" stroke="#20D9FF" stroke-opacity=".75"/>
-                <rect x="183" y="223" width="154" height="74" fill="none" stroke="#20D9FF" stroke-opacity=".25"/>
-                <text x="260" y="266" text-anchor="middle" class="arch__t arch__t--core">GESTION</text>
-              </g>
-
-              <g fill="#20D9FF" class="arch__pin">
-                <rect x="96" y="236" width="8" height="8"/>
-                <rect x="96" y="276" width="8" height="8"/>
-                <rect x="416" y="236" width="8" height="8"/>
-                <rect x="416" y="276" width="8" height="8"/>
-              </g>
-            </svg>
-
-            <span class="stage__id stage__id--tl">SYS.ARCH</span>
-            <span class="stage__id stage__id--br">FIG. 01</span>
-          </div>
-        </div>
       </div>
     </section>
 
-    <!-- ============ EXPERTISE ============ -->
-    <section class="band" id="expertise" aria-labelledby="t-exp">
+    <!-- ============ PRÉSENTATION ============ -->
+    <section class="band band--ivory" id="presentation" aria-labelledby="t-pre">
       <div class="wrap">
-        <div class="band__head rv">
-          <p class="band__tag"><span>01</span> Expertise</p>
-          <h2 class="band__title" id="t-exp">Domaines d'intervention</h2>
-          <p class="band__lead">Compétences concrètes, centrées sur le support IT, les environnements métier et l'accompagnement des utilisateurs.</p>
-        </div>
-
-        <div class="tiles">
-          <article class="tile rv">
-            <span class="tile__no" aria-hidden="true">01</span>
-            <h3 class="tile__title">Support IT &amp; assistance utilisateurs</h3>
-            <p class="tile__text">Assistance, diagnostic, dépannage et accompagnement au quotidien.</p>
-            <span class="tile__rule" aria-hidden="true"></span>
-          </article>
-
-          <article class="tile rv">
-            <span class="tile__no" aria-hidden="true">02</span>
-            <h3 class="tile__title">Déploiement &amp; formation</h3>
-            <p class="tile__text">Mise en place, paramétrage et transfert de compétences.</p>
-            <span class="tile__rule" aria-hidden="true"></span>
-          </article>
-
-          <article class="tile rv">
-            <span class="tile__no" aria-hidden="true">03</span>
-            <h3 class="tile__title">SAP &amp; processus métier</h3>
-            <p class="tile__text">SAP et solutions ERP au service des processus opérationnels.</p>
-            <span class="tile__rule" aria-hidden="true"></span>
-          </article>
-
-          <article class="tile rv">
-            <span class="tile__no" aria-hidden="true">04</span>
-            <h3 class="tile__title">Développement d'applications de gestion</h3>
-            <p class="tile__text">Développement et maintien d'applications web et d'outils de gestion.</p>
-            <span class="tile__rule" aria-hidden="true"></span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ PROJETS ============ -->
-    <section class="band" id="projets" aria-labelledby="t-prj">
-      <div class="wrap">
-        <div class="band__head rv">
-          <p class="band__tag"><span>02</span> Projets</p>
-          <h2 class="band__title" id="t-prj">Projets &amp; solutions numériques</h2>
-          <p class="band__lead">Trois applications de gestion conçues comme de vrais produits : interface, données, usage métier.</p>
-        </div>
-
-        <div class="prods">
-
-          <article class="proj rv">
-            <div class="proj__body">
-              <p class="proj__idx">Projet 01</p>
-              <h3 class="proj__title">Crèche ERP</h3>
-              <p class="proj__text">Application de gestion intégrée pour crèche et jardin d'enfants : dossiers des enfants, inscriptions, présences, formules tarifaires, facturation, paiements et suivi de caisse.</p>
-
-              <dl class="spec">
-                <div class="spec__row">
-                  <dt>Type</dt>
-                  <dd>Application de gestion (ERP) — web &amp; bureau</dd>
-                </div>
-                <div class="spec__row">
-                  <dt>Fonctionnalités clés</dt>
-                  <dd>
-                    <ul class="feat">
-                      <li>Dossiers enfants &amp; familles</li>
-                      <li>Inscriptions &amp; années scolaires</li>
-                      <li>Groupes, personnel &amp; présences</li>
-                      <li>Formules tarifaires, activités &amp; transport</li>
-                      <li>Factures, paiements, reçus &amp; caisse</li>
-                      <li>Rôles et permissions</li>
-                    </ul>
-                  </dd>
-                </div>
-                <div class="spec__row">
-                  <dt>Technologies</dt>
-                  <dd><span class="chip">Laravel 12</span> <span class="chip">PHP 8.2+</span> <span class="chip">SQLite</span> <span class="chip">Blade</span> <span class="chip">Tailwind CSS</span> <span class="chip">Alpine.js</span> <span class="chip">NativePHP</span></dd>
-                </div>
-              </dl>
-            </div>
-
-            <div class="proj__media">
-              <video class="proj__video" controls playsinline preload="metadata" width="1918" height="1012">
-                <source src="assets/videos/creche-erp.mp4" type="video/mp4">
-                Votre navigateur ne prend pas en charge la vidéo HTML5 — <a href="assets/videos/creche-erp.mp4">télécharger la vidéo de démonstration</a>.
-              </video>
-            </div>
-          </article>
-
-          <article class="proj rv">
-            <div class="proj__body">
-              <p class="proj__idx">Projet 02</p>
-              <h3 class="proj__title">L'Art de Gravure</h3>
-              <p class="proj__text">Boutique en ligne pour un atelier de gravure personnalisée : catalogue de créations gravées, personnalisation des articles, panier et passage de commande, complétés par une interface d'administration protégée pour gérer produits, catégories, commandes et réglages du site.</p>
-
-              <dl class="spec">
-                <div class="spec__row">
-                  <dt>Type</dt>
-                  <dd>Application web e-commerce — vitrine &amp; commande</dd>
-                </div>
-                <div class="spec__row">
-                  <dt>Fonctionnalités clés</dt>
-                  <dd>
-                    <ul class="feat">
-                      <li>Catalogue de créations &amp; recherche</li>
-                      <li>Fiches produit par slug (redirection 301)</li>
-                      <li>Personnalisation d'article (nom, date, message, quantité)</li>
-                      <li>Panier — ajout, mise à jour, suppression</li>
-                      <li>Commande &amp; confirmation signée (COD, CCP, BaridiMob)</li>
-                      <li>Back-office : produits, catégories, commandes, réglages</li>
-                    </ul>
-                  </dd>
-                </div>
-                <div class="spec__row">
-                  <dt>Technologies</dt>
-                  <dd><span class="chip">Laravel 12</span> <span class="chip">PHP 8.2+</span> <span class="chip">SQLite</span> <span class="chip">Blade</span> <span class="chip">Tailwind CSS</span> <span class="chip">Vite</span></dd>
-                </div>
-              </dl>
-            </div>
-
-            <div class="proj__media">
-              <video class="proj__video" controls playsinline preload="metadata" width="1904" height="912">
-                <source src="assets/videos/achat.mp4" type="video/mp4">
-                Votre navigateur ne prend pas en charge la vidéo HTML5 — <a href="assets/videos/achat.mp4">télécharger la vidéo de démonstration</a>.
-              </video>
-            </div>
-          </article>
-
-          <article class="proj rv">
-            <div class="proj__body">
-              <p class="proj__idx">Projet 03</p>
-              <h3 class="proj__title">Académie El Tafawok</h3>
-              <p class="proj__text">Plateforme de gestion scolaire pour l'Académie El Tafawok : back-office web pour administrer élèves, enseignants, matières, groupes, inscriptions, paiements, présences, revenus et annonces, complété par une API REST sécurisée destinée à l'application mobile des parents.</p>
-
-              <dl class="spec">
-                <div class="spec__row">
-                  <dt>Type</dt>
-                  <dd>Plateforme web de gestion scolaire &amp; API REST</dd>
-                </div>
-                <div class="spec__row">
-                  <dt>Fonctionnalités clés</dt>
-                  <dd>
-                    <ul class="feat">
-                      <li>Élèves, enseignants, matières &amp; niveaux</li>
-                      <li>Inscriptions, groupes &amp; emplois du temps</li>
-                      <li>Paiements, impayés &amp; signalements</li>
-                      <li>Revenus &amp; fiches enseignants</li>
-                      <li>Présences, séances &amp; annonces</li>
-                      <li>API REST parents (Sanctum &amp; FCM)</li>
-                    </ul>
-                  </dd>
-                </div>
-                <div class="spec__row">
-                  <dt>Technologies</dt>
-                  <dd><span class="chip">Laravel 12</span> <span class="chip">PHP 8.2+</span> <span class="chip">SQLite</span> <span class="chip">Blade</span> <span class="chip">Tailwind CSS</span> <span class="chip">Alpine.js</span> <span class="chip">Laravel Sanctum</span> <span class="chip">FCM</span></dd>
-                </div>
-              </dl>
-            </div>
-
-            <div class="proj__media">
-              <video class="proj__video" controls playsinline preload="metadata" width="1894" height="904">
-                <source src="assets/videos/ecole.mp4" type="video/mp4">
-                Votre navigateur ne prend pas en charge la vidéo HTML5 — <a href="assets/videos/ecole.mp4">télécharger la vidéo de démonstration</a>.
-              </video>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ À PROPOS ============ -->
-    <section class="band" id="a-propos" aria-labelledby="t-abo">
-      <div class="wrap">
-        <div class="about">
-          <div class="about__side rv">
-            <p class="band__tag"><span>03</span> À propos</p>
-            <h2 class="band__title" id="t-abo">Profil</h2>
+        <div class="present__grid">
+          <div class="present__label rv">
+            <p class="eyebrow">Présentation</p>
+            <h2 class="band__title" id="t-pre">Profil <em>&amp;</em> approche</h2>
           </div>
 
-          <div class="about__body rv">
-            <p>Mon profil combine le support informatique, les systèmes d'information et le développement de solutions numériques adaptées aux besoins des organisations. J'interviens dans l'assistance aux utilisateurs, l'exploitation de logiciels de gestion, SAP et les systèmes ERP, ainsi que dans la conception et le développement d'applications web et d'outils métier.</p>
-            <p>J'accompagne les petites entreprises comme les grandes organisations dans l'amélioration de leurs outils informatiques, la digitalisation de leurs processus et la mise en place de solutions pratiques, fiables et évolutives. Mes compétences couvrent également les bases de données, SQL et la gestion de versions avec Git/GitHub.</p>
-            <p>Mes projets illustrent cette approche à travers des solutions dédiées à la gestion d'une crèche et d'un jardin d'enfants, d'un cabinet dentaire et d'un établissement scolaire.</p>
+          <div class="present__body">
+            <p class="rv">Mon profil combine le support informatique, les systèmes d'information et le développement de solutions numériques adaptées aux besoins des organisations. J'interviens dans l'assistance aux utilisateurs, l'exploitation de logiciels de gestion, SAP et les systèmes ERP, ainsi que dans la conception et le développement d'applications web et d'outils métier.</p>
+            <p class="rv">J'accompagne les petites entreprises comme les grandes organisations dans l'amélioration de leurs outils informatiques, la digitalisation de leurs processus et la mise en place de solutions pratiques, fiables et évolutives. Mes compétences couvrent également les bases de données, SQL et la gestion de versions avec Git/GitHub.</p>
+            <p class="rv">Mes projets illustrent cette approche à travers des solutions dédiées à la gestion d'une crèche et d'un jardin d'enfants, d'un cabinet dentaire et d'un établissement scolaire.</p>
+
+            <div class="present__cta rv">
+              <a class="btn btn--solid" href="#projets">
+                Découvrir mes projets
+                <svg class="btn__ico" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M2 8h10M8 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a class="btn btn--line" href="#contact">
+                Me contacter
+                <svg class="btn__ico" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><rect x="1.7" y="3.3" width="12.6" height="9.4" rx="1" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M2.3 4.4 8 8.8l5.7-4.4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -379,77 +150,380 @@
       </div>
     </section>
 
-    <!-- ============ TECHNOLOGIES & OUTILS ============ -->
-    <section class="band" id="technologies" aria-labelledby="t-tek">
+    <!-- ============ EXPERTISE ============ -->
+    <section class="band" id="expertise" aria-labelledby="t-exp">
       <div class="wrap">
         <div class="band__head rv">
-          <p class="band__tag"><span>04</span> Technologies &amp; Outils</p>
-          <h2 class="band__title" id="t-tek">Compétences techniques &amp; environnement technologique</h2>
-          <p class="band__lead">Technologies et outils utilisés au quotidien.</p>
+          <p class="eyebrow">01 — Expertise</p>
+          <h2 class="band__title" id="t-exp">Domaines <em>d'intervention</em></h2>
+          <p class="band__lead">Compétences concrètes, centrées sur le support IT, les environnements métier et l'accompagnement des utilisateurs.</p>
+        </div>
+
+        <div class="tiles">
+          <article class="tile rv">
+            <span class="tile__no" aria-hidden="true">01</span>
+            <h3 class="tile__title">Support IT &amp; Help Desk</h3>
+            <p class="tile__text">Assistance, diagnostic, résolution d'incidents et accompagnement au quotidien des utilisateurs.</p>
+          </article>
+
+          <article class="tile rv">
+            <span class="tile__no" aria-hidden="true">02</span>
+            <h3 class="tile__title">Support applicatif SAP</h3>
+            <p class="tile__text">Support des environnements SAP et analyse des incidents au service des opérations métier.</p>
+          </article>
+
+          <article class="tile rv">
+            <span class="tile__no" aria-hidden="true">03</span>
+            <h3 class="tile__title">ERP &amp; systèmes d'information</h3>
+            <p class="tile__text">Déploiement, paramétrage et suivi de solutions de gestion (ERP) pour les organisations.</p>
+          </article>
+
+          <article class="tile rv">
+            <span class="tile__no" aria-hidden="true">04</span>
+            <h3 class="tile__title">Développement web &amp; applications</h3>
+            <p class="tile__text">Conception et développement d'applications web et d'outils de gestion adaptés aux besoins.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJETS ============ -->
+    <section class="band band--ivory" id="projets" aria-labelledby="t-prj">
+      <div class="wrap">
+        <div class="band__head rv">
+          <p class="eyebrow">02 — Projets</p>
+          <h2 class="band__title" id="t-prj">Projets &amp; <em>solutions numériques</em></h2>
+          <p class="band__lead">Trois applications de gestion conçues comme de vrais produits : interface, données, usage métier. Les démonstrations vidéo originales sont conservées à l'identique.</p>
+        </div>
+
+        <div class="prods">
+
+          <article class="proj rv">
+            <div class="proj__media">
+              <figure class="media">
+                <div class="media__cover">
+                  <img class="media__poster" src="assets/posters/creche-erp.jpg" alt="Aperçu de la démonstration vidéo du projet Crèche ERP" width="1918" height="1012" loading="lazy">
+                  <button class="media__play" type="button" data-video="video-creche">
+                    <span class="media__play-ico" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" focusable="false"><path d="M8 5.5v13l11-6.5z"/></svg>
+                    </span>
+                    <span class="media__play-label">Lancer la démonstration</span>
+                  </button>
+                </div>
+                <video id="video-creche" class="media__video" controls playsinline preload="none" width="1918" height="1012" hidden tabindex="-1">
+                  <source src="assets/videos/creche-erp.mp4" type="video/mp4">
+                  Votre navigateur ne prend pas en charge la vidéo HTML5 — <a href="assets/videos/creche-erp.mp4">télécharger la vidéo de démonstration</a>.
+                </video>
+              </figure>
+              <p class="demo__note"><span class="demo__dot" aria-hidden="true"></span>Démo — vidéo originale conservée · 45,5&nbsp;Mo</p>
+            </div>
+
+            <div class="proj__body">
+              <p class="proj__idx">Dossier 01</p>
+              <h3 class="proj__title">Crèche ERP</h3>
+              <p class="proj__text">Application de gestion intégrée pour crèche et jardin d'enfants : dossiers des enfants, inscriptions, présences, formules tarifaires, facturation, paiements et suivi de caisse.</p>
+
+              <dl class="spec">
+                <div class="spec__row">
+                  <dt>Type</dt>
+                  <dd>Application de gestion (ERP) — web &amp; bureau</dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Fonctionnalités clés</dt>
+                  <dd>
+                    <ul class="feat">
+                      <li>Dossiers enfants &amp; familles</li>
+                      <li>Inscriptions &amp; années scolaires</li>
+                      <li>Groupes, personnel &amp; présences</li>
+                      <li>Formules tarifaires, activités &amp; transport</li>
+                      <li>Factures, paiements, reçus &amp; caisse</li>
+                      <li>Rôles et permissions</li>
+                    </ul>
+                  </dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Technologies</dt>
+                  <dd>
+                    <div class="chips">
+                      <span class="chip">Laravel 12</span> <span class="chip">PHP 8.2+</span> <span class="chip">SQLite</span> <span class="chip">Blade</span> <span class="chip">Tailwind CSS</span> <span class="chip">Alpine.js</span> <span class="chip">NativePHP</span>
+                    </div>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="proj proj--alt rv">
+            <div class="proj__media">
+              <figure class="media">
+                <div class="media__cover">
+                  <img class="media__poster" src="assets/posters/art-de-gravure.jpg" alt="Aperçu de la démonstration vidéo du projet L'Art de Gravure" width="1904" height="912" loading="lazy">
+                  <button class="media__play" type="button" data-video="video-gravure">
+                    <span class="media__play-ico" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" focusable="false"><path d="M8 5.5v13l11-6.5z"/></svg>
+                    </span>
+                    <span class="media__play-label">Lancer la démonstration</span>
+                  </button>
+                </div>
+                <video id="video-gravure" class="media__video" controls playsinline preload="none" width="1904" height="912" hidden tabindex="-1">
+                  <source src="assets/videos/achat.mp4" type="video/mp4">
+                  Votre navigateur ne prend pas en charge la vidéo HTML5 — <a href="assets/videos/achat.mp4">télécharger la vidéo de démonstration</a>.
+                </video>
+              </figure>
+              <p class="demo__note"><span class="demo__dot" aria-hidden="true"></span>Démo — vidéo originale conservée · 68&nbsp;Mo</p>
+            </div>
+
+            <div class="proj__body">
+              <p class="proj__idx">Dossier 02</p>
+              <h3 class="proj__title">L'Art de Gravure</h3>
+              <p class="proj__text">Boutique en ligne pour un atelier de gravure personnalisée : catalogue de créations gravées, personnalisation des articles, panier et passage de commande, complétés par une interface d'administration protégée pour gérer produits, catégories, commandes et réglages du site.</p>
+
+              <dl class="spec">
+                <div class="spec__row">
+                  <dt>Type</dt>
+                  <dd>Application web e-commerce — vitrine &amp; commande</dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Fonctionnalités clés</dt>
+                  <dd>
+                    <ul class="feat">
+                      <li>Catalogue de créations &amp; recherche</li>
+                      <li>Fiches produit par slug (redirection 301)</li>
+                      <li>Personnalisation d'article (nom, date, message, quantité)</li>
+                      <li>Panier — ajout, mise à jour, suppression</li>
+                      <li>Commande &amp; confirmation signée (COD, CCP, BaridiMob)</li>
+                      <li>Back-office : produits, catégories, commandes, réglages</li>
+                    </ul>
+                  </dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Technologies</dt>
+                  <dd>
+                    <div class="chips">
+                      <span class="chip">Laravel 12</span> <span class="chip">PHP 8.2+</span> <span class="chip">SQLite</span> <span class="chip">Blade</span> <span class="chip">Tailwind CSS</span> <span class="chip">Vite</span>
+                    </div>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+          <article class="proj rv">
+            <div class="proj__media">
+              <figure class="media">
+                <div class="media__cover">
+                  <img class="media__poster" src="assets/posters/academie-el-tafawok.jpg" alt="Aperçu de la démonstration vidéo du projet Académie El Tafawok" width="1894" height="904" loading="lazy">
+                  <button class="media__play" type="button" data-video="video-tafawok">
+                    <span class="media__play-ico" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" focusable="false"><path d="M8 5.5v13l11-6.5z"/></svg>
+                    </span>
+                    <span class="media__play-label">Lancer la démonstration</span>
+                  </button>
+                </div>
+                <video id="video-tafawok" class="media__video" controls playsinline preload="none" width="1894" height="904" hidden tabindex="-1">
+                  <source src="assets/videos/ecole.mp4" type="video/mp4">
+                  Votre navigateur ne prend pas en charge la vidéo HTML5 — <a href="assets/videos/ecole.mp4">télécharger la vidéo de démonstration</a>.
+                </video>
+              </figure>
+              <p class="demo__note"><span class="demo__dot" aria-hidden="true"></span>Démo — vidéo originale conservée · 78,7&nbsp;Mo</p>
+            </div>
+
+            <div class="proj__body">
+              <p class="proj__idx">Dossier 03</p>
+              <h3 class="proj__title">Académie El Tafawok</h3>
+              <p class="proj__text">Plateforme de gestion scolaire pour l'Académie El Tafawok : back-office web pour administrer élèves, enseignants, matières, groupes, inscriptions, paiements, présences, revenus et annonces, complété par une API REST sécurisée destinée à l'application mobile des parents.</p>
+
+              <dl class="spec">
+                <div class="spec__row">
+                  <dt>Type</dt>
+                  <dd>Plateforme web de gestion scolaire &amp; API REST</dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Fonctionnalités clés</dt>
+                  <dd>
+                    <ul class="feat">
+                      <li>Élèves, enseignants, matières &amp; niveaux</li>
+                      <li>Inscriptions, groupes &amp; emplois du temps</li>
+                      <li>Paiements, impayés &amp; signalements</li>
+                      <li>Revenus &amp; fiches enseignants</li>
+                      <li>Présences, séances &amp; annonces</li>
+                      <li>API REST parents (Sanctum &amp; FCM)</li>
+                    </ul>
+                  </dd>
+                </div>
+                <div class="spec__row">
+                  <dt>Technologies</dt>
+                  <dd>
+                    <div class="chips">
+                      <span class="chip">Laravel 12</span> <span class="chip">PHP 8.2+</span> <span class="chip">SQLite</span> <span class="chip">Blade</span> <span class="chip">Tailwind CSS</span> <span class="chip">Alpine.js</span> <span class="chip">Laravel Sanctum</span> <span class="chip">FCM</span>
+                    </div>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Intervention terrain — contenu réel de l'expérience UPAC / COSPACK, sans visuel -->
+        <div class="subcard rv">
+          <div>
+            <p class="subcard__k">Expertise — intervention terrain</p>
+            <h3 class="subcard__title">Support &amp; déploiement IT</h3>
+            <p class="subcard__text">Déploiement et support de la solution COSPACK, assistance technique et accompagnement des utilisateurs, contribution au suivi informatique et au reporting. Le détail de cette expérience figure dans la section « Expérience ».</p>
+          </div>
+        </div>
+
+        <!-- Réalisation secondaire — contenu README, sans visuel inventé -->
+        <div class="subcard rv">
+          <div>
+            <p class="subcard__k">Autre réalisation</p>
+            <h3 class="subcard__title">DentalFlow</h3>
+            <p class="subcard__text">Application de gestion pour cabinet dentaire : interface web et organisation adaptée aux besoins métier. Présentation textuelle uniquement — aucune ressource visuelle disponible à ce jour.</p>
+          </div>
+          <div class="subcard__chips chips" aria-label="Technologies de DentalFlow">
+            <span class="chip">Laravel</span> <span class="chip">PHP</span> <span class="chip">SQLite</span> <span class="chip">Blade</span> <span class="chip">Alpine.js</span> <span class="chip">Tailwind CSS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPÉRIENCE ============ -->
+    <section class="band" id="experience" aria-labelledby="t-xp">
+      <div class="wrap">
+        <div class="band__head rv">
+          <p class="eyebrow">03 — Expérience</p>
+          <h2 class="band__title" id="t-xp">Parcours <em>professionnel</em></h2>
+          <p class="band__lead">Expériences confirmées — support IT et support applicatif SAP en environnement de production.</p>
+        </div>
+
+        <ol class="xp">
+          <li class="xp__item rv">
+            <div class="xp__meta">
+              <span class="xp__when">Novembre 2025 — Présent</span>
+              <h3 class="xp__co">UPAC Electronics / Sentrax</h3>
+              <p class="xp__role">IT Support Engineer</p>
+            </div>
+            <ul class="xp__list">
+              <li>Déploiement et support de la solution COSPACK.</li>
+              <li>Assistance technique et accompagnement des utilisateurs.</li>
+              <li>Contribution au suivi informatique et au reporting.</li>
+            </ul>
+          </li>
+          <li class="xp__item rv">
+            <div class="xp__meta">
+              <span class="xp__when">Septembre 2023 — Novembre 2025</span>
+              <h3 class="xp__co">Condor Logistiques</h3>
+              <p class="xp__role">SAP Application Support Engineer</p>
+            </div>
+            <ul class="xp__list">
+              <li>Support applicatif des environnements SAP.</li>
+              <li>Assistance aux utilisateurs et analyse des incidents.</li>
+              <li>Contribution à la continuité des opérations métier.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ COMPÉTENCES ============ -->
+    <section class="band band--ivory" id="competences" aria-labelledby="t-tek">
+      <div class="wrap">
+        <div class="band__head rv">
+          <p class="eyebrow">04 — Compétences</p>
+          <h2 class="band__title" id="t-tek">Compétences &amp; <em>savoir-faire</em></h2>
+          <p class="band__lead">Technologies et outils issus du site et du profil — sans niveau d'expertise ajouté.</p>
         </div>
 
         <div class="kit">
           <div class="kit__group rv">
             <h3 class="kit__title">Développement web</h3>
             <ul class="kit__list">
-              <li class="badge">HTML5</li>
-              <li class="badge">CSS3</li>
-              <li class="badge">JavaScript</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>Laravel</li>
             </ul>
           </div>
 
           <div class="kit__group rv">
-            <h3 class="kit__title">Systèmes &amp; métier</h3>
+            <h3 class="kit__title">ERP &amp; applications métier</h3>
             <ul class="kit__list">
-              <li class="badge">SAP</li>
-              <li class="badge">ERP</li>
-              <li class="badge">Support IT</li>
+              <li>SAP MM</li>
+              <li>SAP SD</li>
+              <li>SAP PM</li>
+              <li>COSPACK ERP</li>
+              <li>Support IT</li>
             </ul>
           </div>
 
           <div class="kit__group rv">
-            <h3 class="kit__title">Données</h3>
+            <h3 class="kit__title">Bases de données</h3>
             <ul class="kit__list">
-              <li class="badge">Bases de données</li>
-              <li class="badge">SQL</li>
+              <li>SQL</li>
+              <li>Oracle SQL Developer</li>
             </ul>
           </div>
 
           <div class="kit__group rv">
-            <h3 class="kit__title">Outils</h3>
+            <h3 class="kit__title">Langages &amp; outils</h3>
             <ul class="kit__list">
-              <li class="badge">Git</li>
-              <li class="badge">GitHub</li>
+              <li>Python</li>
+              <li>C#</li>
+              <li>Git</li>
+              <li>GitHub</li>
+            </ul>
+          </div>
+
+          <div class="kit__group rv">
+            <h3 class="kit__title">Support informatique</h3>
+            <ul class="kit__list">
+              <li>Help Desk</li>
+              <li>Windows</li>
+              <li>Diagnostic matériel &amp; logiciel</li>
+            </ul>
+          </div>
+
+          <div class="kit__group rv">
+            <h3 class="kit__title">Mobile — projets ponctuels</h3>
+            <ul class="kit__list">
+              <li>Flutter</li>
+              <li>Dart</li>
             </ul>
           </div>
         </div>
+
+        <p class="kit__note rv">Flutter / Dart : exploration documentée dans le profil — « selon les projets réalisés ».</p>
       </div>
     </section>
 
     <!-- ============ CONTACT ============ -->
-    <section class="band band--last" id="contact" aria-labelledby="t-con">
+    <section class="band" id="contact" aria-labelledby="t-con">
       <div class="wrap">
-        <div class="band__head rv">
-          <p class="band__tag"><span>05</span> Contact</p>
-          <h2 class="band__title" id="t-con">Entrer en relation</h2>
-          <p class="band__lead">Pour discuter d'un projet ou d'une opportunité.</p>
-        </div>
+        <div class="contact__grid">
+          <div class="rv">
+            <p class="eyebrow">05 — Contact</p>
+            <h2 class="contact__title" id="t-con">Entrons en <em>relation.</em></h2>
+            <p class="band__lead">Pour discuter d'un projet ou d'une opportunité.</p>
+          </div>
 
-        <div class="reach">
-          <div class="reach__row rv">
-            <span class="reach__k">Email</span>
-            <a class="reach__v" href="mailto:idialflora@hotmail.com">M'envoyer un email</a>
-            <span class="reach__n">idialflora@hotmail.com</span>
-          </div>
-          <div class="reach__row rv">
-            <span class="reach__k">GitHub</span>
-            <a class="reach__v" href="https://github.com/laidiradhia96-spec" target="_blank" rel="noopener noreferrer">Profil GitHub</a>
-            <span class="reach__n">github.com/laidiradhia96-spec</span>
-          </div>
-          <div class="reach__row rv">
-            <span class="reach__k">LinkedIn</span>
-            <a class="reach__v" href="https://linkedin.com/in/laidi-radhia-a77566308" target="_blank" rel="noopener noreferrer">Profil LinkedIn</a>
-            <span class="reach__n">Laidi Radhia</span>
+          <div class="reach rv">
+            <div class="reach__row">
+              <span class="reach__k">Email</span>
+              <a class="reach__v" href="mailto:idialflora@hotmail.com">idialflora@hotmail.com</a>
+              <span class="reach__n">M'envoyer un email</span>
+            </div>
+            <div class="reach__row">
+              <span class="reach__k">GitHub</span>
+              <a class="reach__v" href="https://github.com/laidiradhia96-spec" target="_blank" rel="noopener noreferrer">Profil GitHub</a>
+              <span class="reach__n">github.com/laidiradhia96-spec</span>
+            </div>
+            <div class="reach__row">
+              <span class="reach__k">LinkedIn</span>
+              <a class="reach__v" href="https://linkedin.com/in/laidi-radhia-a77566308" target="_blank" rel="noopener noreferrer">Profil LinkedIn</a>
+              <span class="reach__n">Laidi Radhia</span>
+            </div>
           </div>
         </div>
       </div>
@@ -458,9 +532,20 @@
 
   <footer class="foot">
     <div class="wrap foot__in">
-      <p class="foot__brand"><span class="sigil__dot" aria-hidden="true"></span>Radhia Laidi · Portfolio</p>
+      <p class="foot__brand">Radhia&nbsp;Laidi</p>
+
+      <nav class="foot__nav" aria-label="Navigation de pied de page">
+        <a href="#accueil">Accueil</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projets">Projets</a>
+        <a href="#experience">Expérience</a>
+        <a href="#competences">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
       <p class="foot__meta">
-        <span>© <span id="year">2026</span> Radhia Laidi.</span>
+        <span>© <span id="year">2026</span> Radhia Laidi — Portfolio statique, HTML / CSS / JavaScript.</span>
+        <span><a class="top" href="#accueil">Retour en haut ↑</a></span>
       </p>
     </div>
   </footer>

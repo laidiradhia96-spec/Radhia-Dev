@@ -1,7 +1,8 @@
 /* =============================================================================
    Radhia Laidi — Portfolio
    JavaScript natif, sans dépendance : menu mobile, barre fixe, état actif de
-   la navigation et révélations progressives. Aucun innerHTML, aucun eval.
+   la navigation, révélations progressives et activation des vidéos à la
+   demande. Aucun innerHTML, aucun eval.
 
    Principe de sûreté : le contenu est visible par défaut. La classe "anim"
    (posée dans le <head>) n'est conservée que si ce script s'exécute.
@@ -74,7 +75,8 @@
       if (bar) bar.classList.toggle("is-stuck", window.scrollY > 10);
     }
 
-    /* 4. État actif (scroll-spy) */
+    /* 4. État actif (scroll-spy) — un seul lien actif à la fois.
+       B1 : aucun état codé en dur dans le HTML ; on initialise sur "accueil". */
     var navLinks = [];
     var spyTargets = [];
     if (menu) {
@@ -95,6 +97,8 @@
       }
     }
 
+    if (navLinks.length) setActive("accueil");
+
     if (hasIO && spyTargets.length) {
       var spy = new IntersectionObserver(
         function (entries) {
@@ -107,7 +111,29 @@
       for (var m = 0; m < spyTargets.length; m++) spy.observe(spyTargets[m]);
     }
 
-    /* 5. Révélations progressives */
+    /* 5. Vidéos de démonstration — chargées uniquement à la demande.
+       L'affiche (frame réelle de la vidéo) masque un <video preload="none">
+       ; le bouton révèle la vidéo originale et lance la lecture. */
+    var plays = document.querySelectorAll(".media__play");
+    for (var v = 0; v < plays.length; v++) {
+      plays[v].addEventListener("click", function () {
+        var video = document.getElementById(this.getAttribute("data-video"));
+        if (!video) return;
+        var cover = this.closest(".media__cover");
+        if (cover) cover.hidden = true;
+        video.hidden = false;
+        video.focus();
+        var p = video.play();
+        if (p && typeof p.catch === "function") {
+          p.catch(function () {
+            /* Lecture refusée par le navigateur : les contrôles natifs
+               restent disponibles, l'utilisateur peut lancer la lecture. */
+          });
+        }
+      });
+    }
+
+    /* 6. Révélations progressives */
     if (reduce || !hasIO) {
       showAll();
     } else {
@@ -151,7 +177,7 @@
       }, 1500);
     }
 
-    /* 6. Barre fixe : rendu léger */
+    /* 7. Barre fixe : rendu léger */
     var ticking = false;
     window.addEventListener(
       "scroll",
